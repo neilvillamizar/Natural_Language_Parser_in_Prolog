@@ -12,4 +12,8 @@ noun(n(cat)) --> [cat].
 verb(v(eats)) --> [eats].
 
 
-main(List) :- sentence(Parse_tree, List, []), write(Parse_tree).
+main(Input) :- 
+	split_string(Input,"\s","\s",String_list),
+	maplist(atom_string, List, String_list),
+	sentence(Parse_tree, List, []),
+	write(Parse_tree).
