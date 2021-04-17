@@ -1,0 +1,72 @@
+Oracion
+SujetoTerceraPersona - Predicado tercera persona
+SujetoOtro - Predicado Otro
+
+SujetoTerceraPersona
+Pronombres3 -- He She It
+Sustantivo
+SustantivoQueEmpieza
+SustantivoQueTermina
+ConjuncionDeSustantivos
+ConjuncionDeSustantivos SustantivoQueTermina
+SustantivoQueEmpieza ConjuncionDeSustantivos
+
+ConjuncionDeSustantivos
+Sustantivo
+Sustantivo ConjuncionDeSustantivos
+
+SustantivoQueTermina
+Sustantivo articulo Adjetivo
+Sustantivo
+
+SustantivoQueEmpieza
+Sustantivo
+Articulo Sustantivo
+Articulo Adjetivo Sustantivo
+
+SujetoOtro
+Pronombres -- I, you, we, they
+ListaDeSustantivos
+
+ListaDeSustantivos 
+SustantivoPluralQueEmpieza
+ConjuncionDeSustantivosConPlurales and Sustantivos 
+
+ConjuncionDeSustantivosConPlurales
+Sustantivos
+Sustantivos conjuncion Sustatntivos
+
+Sustantivos
+SustantivoPluralQueEmpieza
+SujetoTerceraPersona
+
+SustantivoPluralQueEmpieza
+SustantivoPlural
+Articulo SustantivoPlural
+Articulo Adjetivo SustantivoPlural
+
+SustantivoPlural -- Token
+
+Predicado3
+PredicadoPasado
+Predicado3Presente
+PredicadoFuturo
+
+PredicadoO
+PredicadoPasado
+PredicadoOPresente
+PredicadoFuturo
+
+PredicadoFuturo
+will verboInf complemento
+
+PredicadoPasado
+verbPasado complento
+
+Predicado3Presente
+verboPresenteSimple3 complento
+
+PredicadoOPresente
+verbInf complemento
+
+
