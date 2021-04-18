@@ -20,6 +20,7 @@ composed_noun(composed_noun(N, C)) --> noun_sing(N), composed_noun(C).
 
 % Sustantivo con articulo y adjetivo posiblemente
 noun_phrase(noun_phrase(A, N)) --> article(A), composed_noun(N).
+noun_phrase(noun_phrase(D, N)) -->description(D), composed_noun(N).
 noun_phrase(noun_phrase(A, D, N)) --> article(A), description(D), composed_noun(N).
 
 % Sujeto en primera y segunda persona, y en tercera persona del plural
@@ -39,6 +40,7 @@ single_subject(single_subject(S)) --> subject_tps(S).
 
 % Sustantivo plural compuesto con articulo y adjetivo
 noun_phrase_plural(noun_phrase_plural(A, P)) --> article(A), noun_plural(P).
+noun_phrase_plural(noun_phrase_plural(D, P)) --> description(D), noun_plural(P).
 noun_phrase_plural(noun_phrase_plural(A, D, P)) --> article(A), description(D), noun_plural(P).
 
 % Cualquier sujeto
@@ -133,9 +135,11 @@ article(article(a)) --> [a].
 article(article(the)) --> [the].
 
 description(description(new)) --> [new].
+description(description(old)) --> [old].
 description(description(great)) --> [great].
 description(description(gamer)) --> [gamer].
 description(description(teachers)) --> [teachers].
+description(description(student)) --> [student].
 description(description(best)) --> [best].
 description(description(impossible)) --> [impossible].
 description(description(incredible)) --> [incredible].
